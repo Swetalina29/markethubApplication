@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProductCard from './ProductCard';
 
-const API = 'http://localhost:8080/api/products';
+var API = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/products';
 const CATEGORIES = ['ALL','ELECTRONICS','CLOTHING','BOOKS','HOME','SPORTS','OTHER'];
 
 function ProductList({ onAddToCart }) {
