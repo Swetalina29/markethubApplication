@@ -1,4 +1,4 @@
-package com.markethub;
+﻿package com.markethub;
 
 import com.markethub.model.Product;
 import com.markethub.model.Product.Category;
@@ -18,13 +18,12 @@ public class DataLoader implements CommandLineRunner {
         if (productRepository.count() == 0) {
             System.out.println("Loading sample products...");
 
-            // ── ELECTRONICS ──────────────────────────────────────
-
+            // ELECTRONICS
             productRepository.save(new Product(null,
                 "iPhone 15 Pro",
                 "Latest Apple iPhone with A17 chip, 48MP camera, titanium design",
                 129999.0, 15,
-                "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400",
+                "https://images.unsplash.com/photo-1678652197831-2d180705cd2c?w=400",
                 "TechStore India", Category.ELECTRONICS));
 
             productRepository.save(new Product(null,
@@ -38,7 +37,7 @@ public class DataLoader implements CommandLineRunner {
                 "MacBook Air M2",
                 "Apple MacBook Air with M2 chip, 8GB RAM, 256GB SSD, 13 inch display",
                 114999.0, 10,
-                "https://images.unsplash.com/photo-1611186871525-8b58f05e6947?w=400",
+                "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
                 "TechStore India", Category.ELECTRONICS));
 
             productRepository.save(new Product(null,
@@ -52,7 +51,7 @@ public class DataLoader implements CommandLineRunner {
                 "Wireless Bluetooth Earbuds",
                 "30hr battery, active noise cancellation, IPX5 water resistant",
                 3499.0, 35,
-                "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400",
+                "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400",
                 "TechStore India", Category.ELECTRONICS));
 
             productRepository.save(new Product(null,
@@ -66,7 +65,7 @@ public class DataLoader implements CommandLineRunner {
                 "Canon DSLR Camera EOS 1500D",
                 "24.1MP sensor, Full HD video, built-in WiFi, beginner friendly",
                 34999.0, 12,
-                "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400",
+                "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400",
                 "CameraShop", Category.ELECTRONICS));
 
             productRepository.save(new Product(null,
@@ -76,20 +75,19 @@ public class DataLoader implements CommandLineRunner {
                 "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400",
                 "ElectroMart", Category.ELECTRONICS));
 
-            // ── CLOTHING ─────────────────────────────────────────
-
+            // CLOTHING
             productRepository.save(new Product(null,
                 "Cotton Kurta Set",
                 "Traditional Indian kurta with matching bottoms, multiple colors",
                 1299.0, 75,
-                "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400",
+                "https://images.unsplash.com/photo-1614786269829-d24616faf56d?w=400",
                 "FashionIndia", Category.CLOTHING));
 
             productRepository.save(new Product(null,
                 "Mens Formal Shirt",
                 "100% cotton formal shirt, slim fit, available in white and blue",
                 899.0, 60,
-                "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400",
+                "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400",
                 "StyleHub", Category.CLOTHING));
 
             productRepository.save(new Product(null,
@@ -106,13 +104,12 @@ public class DataLoader implements CommandLineRunner {
                 "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?w=400",
                 "DenimWorld", Category.CLOTHING));
 
-            // ── BOOKS ────────────────────────────────────────────
-
+            // BOOKS
             productRepository.save(new Product(null,
                 "Java Programming Complete Guide",
                 "From beginner to advanced Java, 800 pages with exercises and projects",
                 599.0, 100,
-                "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400",
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400",
                 "BookHub", Category.BOOKS));
 
             productRepository.save(new Product(null,
@@ -136,8 +133,7 @@ public class DataLoader implements CommandLineRunner {
                 "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
                 "TechBooks", Category.BOOKS));
 
-            // ── HOME ─────────────────────────────────────────────
-
+            // HOME
             productRepository.save(new Product(null,
                 "Wooden Study Table",
                 "Solid wood study table with drawer and shelf, 4 feet wide",
@@ -166,8 +162,7 @@ public class DataLoader implements CommandLineRunner {
                 "https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=400",
                 "HomeComfort", Category.HOME));
 
-            // ── SPORTS ───────────────────────────────────────────
-
+            // SPORTS
             productRepository.save(new Product(null,
                 "Men's Running Shoes",
                 "Lightweight breathable running shoes with cushioning sole",
@@ -179,7 +174,7 @@ public class DataLoader implements CommandLineRunner {
                 "Yoga Mat Premium",
                 "6mm thick anti-slip eco-friendly yoga mat with carry strap",
                 799.0, 60,
-                "https://images.unsplash.com/photo-1601925228008-f5e6a3b29cc2?w=400",
+                "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=400",
                 "FitLife", Category.SPORTS));
 
             productRepository.save(new Product(null,
@@ -203,8 +198,7 @@ public class DataLoader implements CommandLineRunner {
                 "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400",
                 "SportZone", Category.SPORTS));
 
-            // ── OTHER ─────────────────────────────────────────────
-
+            // OTHER
             productRepository.save(new Product(null,
                 "Leather Wallet Men",
                 "Genuine leather slim wallet, RFID blocking, multiple card slots",
@@ -216,7 +210,7 @@ public class DataLoader implements CommandLineRunner {
                 "Sunglasses Polarized",
                 "UV400 protection polarized sunglasses, unisex, lightweight frame",
                 999.0, 40,
-                "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+                "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
                 "StyleHub", Category.OTHER));
 
             productRepository.save(new Product(null,
@@ -240,7 +234,8 @@ public class DataLoader implements CommandLineRunner {
                 "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400",
                 "HomeDecor", Category.OTHER));
 
-            System.out.println("✅ 30 products loaded successfully!");
+            System.out.println("30 products loaded successfully!");
         }
     }
 }
+
