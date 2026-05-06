@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/markethubApplication/static/css/main.dbeb9730.css",
-    "main.js": "/markethubApplication/static/js/main.4bace144.js",
+    "main.js": "/markethubApplication/static/js/main.ab03d7a1.js",
     "index.html": "/markethubApplication/index.html",
     "main.dbeb9730.css.map": "/markethubApplication/static/css/main.dbeb9730.css.map",
-    "main.4bace144.js.map": "/markethubApplication/static/js/main.4bace144.js.map"
+    "main.ab03d7a1.js.map": "/markethubApplication/static/js/main.ab03d7a1.js.map"
   },
   "entrypoints": [
     "static/css/main.dbeb9730.css",
-    "static/js/main.4bace144.js"
+    "static/js/main.ab03d7a1.js"
   ]
 }
